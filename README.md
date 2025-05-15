@@ -73,12 +73,50 @@ Download lC25000、BreakHis and CRC-5000 datasets, and place them in `global.ini
 
 
 ## Training and Testing
-- The validation and testing will auto run after training.
-- More options can be found in `main` file.
-- The model will be trained using command: python main.py
+# Using ZDE-NAS for Custom Dataset Search and Training
+
+If you want to use this repository to perform search and training on your own dataset, please follow these steps:
+
+## Steps
+
+1. **Store Your Data**  
+   Place your data in the `datasets` directory.
+
+2. **Modify Data Loading**  
+   Modify the data loading method in the `load_dataset` function to ensure that your data is correctly loaded.
+
+3. **Set Up Configuration File**  
+   Configure the settings in the `global.ini` file before running the search and training:
+
+   ```ini
+    [settings]
+    pop_size = 20
+    num_iteration = 20
+    diff_rate = 0.4
+    crossover_rate = 0.5
+    dataset = your data name
+    
+    [network]
+    max_length = 10
+    image_channel = 3
+    max_output_channel = 128
+    num_class = 8
+    epoch_test = 300
+    Tp = 1.5e6
+    Tf = 150e6
+    wp = -0.01, -1
+    wf = -0.01, -1
+   ```
+
+4. **Run the Program.**  
+   Execute the main.py file.
+   
+# Notice
+If you would like to receive full source results of ZDE-NAS, please contact the author Jie Zheng at zjpdd0905@stu.cwnu.edu.cn. Please indicate your purpose of use, I will reply the first moment I see the email, thank you!
 
 ## Reference codes:
 - https://github.com/HuangJunh/SLE-NAS
 - https://github.com/HuangJunh/EPCNAS
 - https://github.com/HuangJunh/FPSO
 - https://github.com/JieZhengs/AMPS-NAS
+- https://github.com/JieZhengs/TM-NAS
