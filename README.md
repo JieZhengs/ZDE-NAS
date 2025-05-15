@@ -10,7 +10,6 @@
   publisher={IEEE}
 }
 
-```
 @INPROCEEDINGS{FPSO,
 title={A Flexible Variable-length Particle Swarm Optimization Approach to Convolutional Neural Network Architecture Design},
 author={Huang, Junhao and Xue, Bing and Sun, Yanan and Zhang, Mengjie},
