@@ -2,12 +2,16 @@
 
 ## Citation
 ```
-@article{xu2025adaptive,
-  title={Adaptive Multi-particle Swarm Neural Architecture Search for High-incidence Cancer Prediction},
+@ARTICLE{10896623,
   author={Xu, Liming and Zheng, Jie and He, Chunlin and Wang, Jing and Zheng, Bochuan and Lv, Jiancheng},
-  journal={IEEE Transactions on Artificial Intelligence},
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={Adaptive Multiparticle Swarm Neural Architecture Search for High-Incidence Cancer Prediction}, 
   year={2025},
-  publisher={IEEE}
+  volume={6},
+  number={8},
+  pages={2203-2214},
+  keywords={Cancer;Computer architecture;Accuracy;Particle swarm optimization;Feature extraction;Lesions;Optimization;Neural architecture search;Biomedical imaging;Medical diagnostic imaging;High-incidence cancer prediction;neural architecture search (NAS);particle swarm optimization (PSO);weight sharing},
+  doi={10.1109/TAI.2025.3543822}
 }
 
 @INPROCEEDINGS{FPSO,
